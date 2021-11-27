@@ -1,0 +1,26 @@
+API para Registrar Pokemons
+
+* requisitos
+- listar pokemons do site "https://pokemon.fandom.com/wiki/List_of_Pok%C3%A9mon"
+
+* cadastrar pokemon:
+- numero pokedex
+- nome
+- tipo 1
+- tipo 2 
+- link imagem
+- createdAt
+- updatedAt
+- id
+
+* endpoints 
+- cadastrar pokemons de forma unitária
+- atualizar pokemons cadastrados
+- listar pokemons cadastrados
+- pegar pokemons específicos
+- deletar pokemons cadastrados
+
+* rotinas
+- cadastrar/atualizar pokemons do site "https://pokemon.fandom.com/wiki/List_of_Pok%C3%A9mon" 1 vez ao dia
+
+

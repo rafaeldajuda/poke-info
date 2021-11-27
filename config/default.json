@@ -1,0 +1,13 @@
+{
+    "api": {
+        "port": 3000,
+        "linkSite": "https://pokemon.fandom.com/wiki/List_of_Pok%C3%A9mon"
+    },
+    "database": {
+        "url": "localhost",
+        "port": "3000",
+        "database": "pokeinfo",
+        "username": "root",
+        "password": "admin"
+    }
+}
