@@ -1,12 +1,19 @@
 const express = require('express');
-const config = require('config');
 const routes = require('../router');
+const middlewares = require('./middlewares');
 
 module.exports = () => {
     const app = express();
-    app.use(express.json());
 
     //MIDDLEWARES
+    app.use((req, res, next) => {
+        middlewares.validateContentType(req, res, next);
+    });
+    app.use(express.json());
+
+    app.use((req, res, next) => {
+        middlewares.headerAccept(req, res, next);
+    });
 
     //ROUTES
     routes(app);
